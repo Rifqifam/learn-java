@@ -1,0 +1,16 @@
+# --- Compiled Java output (regenerated on every machine — never commit) ---
+*.class
+bin/
+out/
+target/
+
+# --- Editor / IDE files ---
+.vscode/
+.idea/
+*.iml
+
+# --- OS files ---
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
