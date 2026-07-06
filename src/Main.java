@@ -7,6 +7,16 @@ public class Main {
     // we unpack every one of those in later weeks. For today, all you
     // need to know: execution begins on the line below.
     public static void main(String[] args) {
-        System.out.println("Hello, Java — the environment works!");
+        String name = "Dune";
+        int pages = 82;
+        double price = 100.00;
+        boolean availibility = true;
+
+        System.out.println("Title: " + name);
+        System.out.println("pages: " + pages);
+        System.out.println("price: " + price);
+        System.out.println("availibility: " + availibility);
+
+
     }
 }
