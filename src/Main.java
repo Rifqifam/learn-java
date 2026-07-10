@@ -10,10 +10,10 @@ public class Main {
 
         // Day 1
 
-        String name = "Dune";
-        int pages = 82;
-        double price = 100.00;
-        boolean availibility = true;
+        // String name = "Dune";
+        // int pages = 82;
+        // double price = 100.00;
+        // boolean availibility = true;
 
         // System.out.println("Title: " + name);
         // System.out.println("pages: " + pages);
@@ -50,17 +50,6 @@ public class Main {
         //     copies--;
         // }
 
-        int sumToResult = sumTo(10);
-
-        System.out.println("Result " +sumToResult);
-
     }
-        static int sumTo(int n) {
-            int total = 0;                  // the accumulator gets its own box
-            for (int i = 1; i <= n; i++) {
-                total = total + i;          // add into total — NOT into n
-            }
-            return total;                   // n never moved; it stayed 3 the whole time
-        }
 }
 
