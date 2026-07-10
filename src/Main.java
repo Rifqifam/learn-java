@@ -40,15 +40,27 @@ public class Main {
 
         // Day 3
 
-        int copies = 5;
-        for (int i = 1; i<= copies; i++){
-            System.out.println("Copy #" + i +" is ready to lend");
-        }
+        // int copies = 5;
+        // for (int i = 1; i<= copies; i++){
+        //     System.out.println("Copy #" + i +" is ready to lend");
+        // }
 
-        while(copies > 0){
-            System.out.println( copies + " Copies remaining");
-            copies--;
-        }
+        // while(copies > 0){
+        //     System.out.println( copies + " Copies remaining");
+        //     copies--;
+        // }
+
+        int sumToResult = sumTo(10);
+
+        System.out.println("Result " +sumToResult);
 
     }
+        static int sumTo(int n) {
+            int total = 0;                  // the accumulator gets its own box
+            for (int i = 1; i <= n; i++) {
+                total = total + i;          // add into total — NOT into n
+            }
+            return total;                   // n never moved; it stayed 3 the whole time
+        }
 }
+
