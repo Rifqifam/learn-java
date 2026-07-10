@@ -1,20 +1,15 @@
 public class w2 {
-        public static void main(String[] args) {
-            
-            printReceipt("Jonathan", 3);
-        }
+    public static void main(String[] args) {
+        int myShots = 2;
+        myShots = Shot(myShots);
+        System.out.println("Back in main, myShots = " + myShots);
+    }
 
-        static double coffeePrice(int shots){
-            double base = 3;
-            double total = base + (shots * 0.80);
-            
-            return total;
-        
-        }
+    static int Shot(int shots) {
+        shots = shots + 1;
+        System.out.println("Inside method, shots = " + shots);
 
-        static void printReceipt(String customer, int shots){
-            double price = coffeePrice(shots);
+        return shots;
+    }
 
-            System.out.println("Hi "+ customer + " your coffee price is " + price);
-        }
 }
