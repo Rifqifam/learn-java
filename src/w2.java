@@ -26,7 +26,7 @@ public class w2 {
         // System.out.println("total :" + total);
 
         bumpFirst(cup);
-        System.out.println("cups[0] is now " + cup);
+        System.out.println("cups[0] is now " + cups[0]);
     }
 
     static void bumpFirst(int arr) {
