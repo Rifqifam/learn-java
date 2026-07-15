@@ -1,27 +1,29 @@
 public class w3 {
     public static void main(String[] args){
-        Book b1 = new Book();
-        b1.title = "Dune";
-        b1.pages= 412;
-        b1.available = true;
+        Book b1 = new Book("Dune", 412, true);
 
-        Book b2 = new Book();
-        b2.title = "Tom and Jerry";
-        b2.pages= 10;
-        b2.available = true;
+        Book b2 = new Book("Tom and Jerry", 10);
 
-        System.out.println(b1.title + " has " + b1.pages + " pages");
-        System.out.println(b2.title + " has " + b2.pages + " pages");
-        System.out.println("\n");
+        Book b3 = new Book("Third book", 10);
+        
+        // b1.checkOut();
 
-        checkOut(b1);
-        System.out.println("Result : " + b1.available);
+        // System.out.println("Checkout Result");
+        // System.out.println(b1.getAvailibility());
+
+        // System.out.println("\n");
+        // System.out.println("PrintInfo Result");
+        // b1.printInfo();
+        // b2.printInfo();
+        // b3.printInfo();
+
+        // System.out.println(Book.count);
+
+        b1.setPages(-50);
+        System.out.println("After rejected setPages: " + b1.getPages());
 
 
-    }
-
-    static void checkOut(Book b){
-        b.available = false;
     }
 
 }
+
